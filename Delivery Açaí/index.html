@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Delivery Açaí</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1>Cardápio do Açaí</h1>
+    <h4>by Raquel Prudêncio Lemos Duarte</h4>
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome"><br><br>
+
+    <h3>Tamanhos</h3>
+    <label><input type="radio" name="tamanho" value="300ml"> 300ml</label><br>
+    <label><input type="radio" name="tamanho" value="400ml"> 400ml</label><br>
+    <label><input type="radio" name="tamanho" value="500ml"> 500ml</label><br>
+    <label><input type="radio" name="tamanho" value="700ml"> 700ml</label><br>
+    <label><input type="radio" name="tamanho" value="1 Litro"> 1 Litro</label><br>
+
+    <h3>Complementos (somente 6 opções)</h3>
+    <form id="complementoForm">
+        <label><input type="checkbox" name="complemento" value="M&M"> M&M</label><br>
+        <label><input type="checkbox" name="complemento" value="Sucrilhos"> Sucrilhos</label><br>
+        <label><input type="checkbox" name="complemento" value="Leite em pó"> Leite em pó</label><br>
+        <label><input type="checkbox" name="complemento" value="Paçoca"> Paçoca</label><br>
+        <label><input type="checkbox" name="complemento" value="Gotas de chocolate"> Gotas de chocolate</label><br>
+        <label><input type="checkbox" name="complemento" value="Chocobool"> Chocobool</label><br>
+        <label><input type="checkbox" name="complemento" value="Amendoim"> Amendoim</label><br>
+        <label><input type="checkbox" name="complemento" value="Ovomaltine"> Ovomaltine</label><br>
+    </form>
+    <div id="warning" style="color: red;"></div>
+
+
+    <h3>Frutas (somente 2 opções)</h3>
+    <form id="frutaForm">
+        <label><input type="checkbox" name="fruta" value="Morango"> Morango</label><br>
+        <label><input type="checkbox" name="fruta" value="Uva"> Uva</label><br>
+        <label><input type="checkbox" name="fruta" value="Banana"> Banana</label><br>
+        <label><input type="checkbox" name="fruta" value="Kiwi"> Kiwi</label><br>
+        <label><input type="checkbox" name="fruta" value="Manga"> Manga</label><br>
+    </form>
+    <div id="frutaWarning" style="color: red;"></div>
+
+    <h3>Coberturas (somente 2 opções)</h3>
+    <form id="coberturaForm">
+        <label><input type="checkbox" name="cobertura" value="Morango"> Morango</label><br>
+        <label><input type="checkbox" name="cobertura" value="Chocolate"> Chocolate</label><br>
+        <label><input type="checkbox" name="cobertura" value="Leite condensado"> Leite condensado</label><br>
+        <label><input type="checkbox" name="cobertura" value="Menta"> Menta</label><br>
+        <label><input type="checkbox" name="cobertura" value="Kiwi"> Kiwi</label><br>
+        <label><input type="checkbox" name="cobertura" value="Maracujá"> Maracujá</label><br>
+        <label><input type="checkbox" name="cobertura" value="Uva"> Uva</label><br>
+        <label><input type="checkbox" name="cobertura" value="Banana"> Banana</label><br>
+    </form>
+    <div id="coberturaWarning" style="color: red;"></div>
+
+    <button id="enviarButton" class="botao-enviar">Enviar</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
